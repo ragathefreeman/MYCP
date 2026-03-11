@@ -12,3 +12,7 @@ git clone "copy/paste"
 git add . 
 git commit -am "*Message*"
 git push
+git branch
+git status
+git checkout "name_of_branch"
+git checkout -b
