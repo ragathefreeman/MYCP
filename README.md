@@ -7,6 +7,8 @@ Search Results "Search Results.pdf"
 RIS file of respected search "Result.RIS"
 
 
+git clone "copy/paste"
 
+git add . 
 git commit -am "*Message*"
 git push
