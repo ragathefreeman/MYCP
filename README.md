@@ -2,6 +2,8 @@
 **MYCP SCOPING REVIEW PROJECT**
 
 _***Copyright and intellectual property for this protocol belong to Raghav Khanal, Sri Hari Govind, Rachael Barrett, Mahim Eaty, Oumnia Bouaddi, and Hasheem Mannan. Users of this protocol should cite the original publication accordingly ***._
+Please do use this following citation 
+Khanal R, Narendrakumar SK, Barrett R, Eaty M, Bouaddi O. THE HEALTH OUTCOMES AND CHALLENGES OF CHILDREN AND YOUTH ON THE MOVE IN THE CONTEXT OF CLIMATE CHANGE ASSOCIATED MIGRATION. OSF; 2026 Mar 15. Available from: https://osf.io/pjknc
 
 This Scoping Review on title " Health Outcomes and Challenges among youth and childrens in associated with climate change migration"
 
