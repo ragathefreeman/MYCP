@@ -8,8 +8,7 @@ Please do use this following citation while using this review protocal:
 
 Khanal R, Narendrakumar SK, Barrett R, Eaty M, Bouaddi O. THE HEALTH OUTCOMES AND CHALLENGES OF CHILDREN AND YOUTH ON THE MOVE IN THE CONTEXT OF CLIMATE CHANGE ASSOCIATED MIGRATION. OSF; 2026 Mar 15. Available from: https://osf.io/pjknc
 
-This Scoping Review on title " Health Outcomes and Challenges among youth and childrens in associated with climate change migration"
-
+This review in title "Health Outcomes Among Children and Youth in Climate-Related Migration: A Scoping Review"
 1. "Protocol_MYPC.docx" is the main review protocal of this Sc-R
 2. "PRISMA and Search Results.docx" is the PRISMA-Flow and details of search results
 3. "Excluded Article List and Included Article. Doc" is the details of article based on full-text screening
