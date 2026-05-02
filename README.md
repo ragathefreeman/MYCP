@@ -29,13 +29,3 @@ This review in title "Health Outcomes Among Children and Youth in Climate-Relate
 
 
 
-
-
-git clone "copy/paste"
-git add . 
-git commit -am "*Message*"
-git push
-git branch
-git status
-git checkout "name_of_branch"
-git checkout -b
