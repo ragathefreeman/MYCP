@@ -12,11 +12,11 @@ APA style "Khanal, R., Govind, S., Barrett, R., Eaty, M., & Bouaddi, O. (2026, M
 
 This review in title "Health Outcomes Among Children and Youth in Climate-Related Migration: A Scoping Review"
 
-1. "Protocol_MYPC.docx" is the main review protocal of this scoping review
-2. "PRISMA and Search Results.docx" is the PRISMA-Flow and details of search results
-3. "Excluded Article List and Included Article. Doc" is the details of article based on full-text screening
-4. "All RIS File" folder include all the RIS file based on 4 databases
-5. "Data Extraction.docx" is the data-extracted for synthesis (to be uploaded soon)
+"Protocol_MYPC.docx" is the main review protocal of this scoping review
+"PRISMA and Search Results.docx" is the PRISMA-Flow and details of search results
+"Excluded Article List and Included Article. Doc" is the details of article based on full-text screening
+"All RIS File" folder include all the RIS file based on 4 databases
+"Included Articles.xlsx"is the data-extraction file from included article.
 
 
 
