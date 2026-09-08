@@ -1,0 +1,223 @@
+---
+title: "Rmark"
+author: "Raghav Khanal,
+Srihari Govind,
+Rachael Barrett,
+Mahim Eaty,
+Oumnia Bouaddi"
+
+date: "2026-09-07"
+output: html_document
+---
+
+This R Markdown file contains the data analysis for the systematic review titled "Health Outcomes and Challenges among Youth and Children on the Move in the Context of Climate Change–Related Migration." The review protocol is publicly registered on the Open Science Framework (OSF): https://doi.org/10.17605/OSF.IO/PJKNC.
+
+All data, analysis files, and supporting materials are also publicly available in our GitHub repository (https://github.com/ragathefreeman/MYCP) to promote open science, transparency, and reproducible research practices.
+
+
+
+```{r,echo=TRUE, warning=FALSE,message=FALSE}
+library(readxl)
+library(tidyverse)
+library(countrycode)
+library(rnaturalearth)
+library(sf)
+library(RColorBrewer)
+library(gtsummary)
+library(gt)
+
+# Import data (name of data is analysis.xlsx)
+d11 <- read_excel("analysis.xlsx")
+
+# Convert variables to factors
+d11$`Country-Economy`<-as.factor(d11$`Country-Economy`)
+d11$Gender <- as.factor(d11$Gender)
+d11$`Socio-economic` <- as.factor(d11$`Socio-economic`)
+d11$`Socio-behavioral` <- as.factor(d11$`Socio-behavioral`)
+d11$Demographic <- as.factor(d11$Demographic)
+d11$Biological <- as.factor(d11$Biological)
+d11$Geographic <- as.factor(d11$Geographic)
+d11$`Health System Capacity` <- as.factor(d11$`Health System Capacity`)
+
+# Geographic distribution
+country_counts <- as.data.frame(table(d11$Country))
+names(country_counts) <- c("Country", "n")
+
+country_counts$iso_a3 <- countrycode(
+  country_counts$Country,
+  origin = "country.name",
+  destination = "iso3c"
+)
+
+world <- ne_countries(
+  scale = "small",
+  returnclass = "sf"
+)
+
+world_joined <- world %>%
+  left_join(country_counts, by = "iso_a3")
+
+ggplot(world_joined) +
+  geom_sf(aes(fill = n), color = "blue", size = 0.1) +
+  scale_fill_gradient(
+    low = "pink",
+    high = "brown",
+    na.value = "white",
+    name = "Studies (n)"
+  ) +
+  theme_minimal() +
+  labs(
+    title = "                          Countries from Included Studies"
+  ) +
+  theme(
+    axis.text = element_blank(),
+    axis.ticks = element_blank(),
+    panel.grid = element_blank()
+  )
+
+```
+
+Among 12 included studies, 9 were from United States of America (USA), and 1 from Bangladesh, 1 Nigeria and 1 Taiwan.
+
+```{r,echo=TRUE, warning=FALSE,message=FALSE}
+ggsave(
+  "~/Desktop/SSH/MYCP/country_map.png",
+  width = 10,
+  height = 6,
+  dpi = 500
+)
+rawtable <- table(
+  d11$`Country-Economy`
+)
+
+Incomepercentage <- prop.table(rawtable) * 100
+
+print(Incomepercentage)
+
+```
+
+```{r,echo=TRUE, warning=FALSE,message=FALSE}
+# Health outcomes
+raw_table <- table(
+  d11$`Health Outcomes based on WHO Framework`
+)
+
+tablepercentage <- prop.table(raw_table) * 100
+
+myPalette <- brewer.pal(5, "Pastel1")
+
+pie(
+  tablepercentage,
+  labels = paste0(
+    names(tablepercentage),
+    "\n(",
+    round(tablepercentage, 1),
+    "%)"
+  ),
+  border = "green",
+  col = myPalette,
+  main = "Health outcomes based on included studies (n = 12)",cex = 0.45
+)
+
+
+
+```
+
+
+Among total studies, majority of the studies (n=7) reported Mental health and pyschological health outcomes followed by Effect on Health Service Utilization (n=3), Complication of existing disease(1) and Water Borne and Vector borne disease(1).
+
+
+
+
+```{r,echo=TRUE, warning=FALSE,message=FALSE}
+
+# Count Yes responses
+counts <- d11 %>%
+  select(
+    Gender,
+    Demographic,
+    `Socio-economic`,
+    `Socio-behavioral`,
+    Biological,
+    Geographic,
+    `Health System Capacity`
+  ) %>%
+  summarise(
+    across(
+      everything(),
+      ~ sum(. == "Yes", na.rm = TRUE)
+    )
+  ) %>%
+  pivot_longer(
+    everything(),
+    names_to = "Factor",
+    values_to = "Count"
+  )
+
+# Plot factors influencing health outcome
+ggplot(
+  counts,
+  aes(
+    x = reorder(Factor, Count),
+    y = Count,
+    fill = Factor
+  )
+) +
+  geom_col() +
+  geom_text(
+    aes(label = Count),
+    hjust = -1,
+    size = 3
+  ) +
+  coord_flip() +
+  labs(
+    x = "Factor influencing health outcome",
+    y = "Number of Studies",
+    title = "Studies reporting health outcome (n = 12)"
+  ) +
+  theme_minimal(base_size = 11) +
+  theme(
+    legend.position = "none"
+  )
+
+ggsave(
+  "~/Desktop/SSH/MYCP/factors_influencing_outcome.png",
+  width = 10,
+  height = 6,
+  dpi = 300
+)
+```
+
+Majority of the study reported (n =5) gender factor, followed by socio-economic (n=3),demographic (n=3), socio-behaviral (n=2), biological (n=2), health system capacity (n=1) and geographic factor (n=1) were associated with health outcome in children and youth on move in context of climatic related migration.
+
+
+```{r,echo=TRUE, warning=FALSE,message=FALSE}
+# Table 1
+table1 <- d11 |>
+  tbl_summary(
+    include = c(
+      YOP,
+      Design,`Study Setting`,
+      `Climatic Events`,`Country-Economy`
+    )
+  )|>
+  modify_caption("**Table 1**")
+gtsave(
+  as_gt(table1),
+  filename = "~/Desktop/SSH/MYCP/table1.docx"
+)
+table1
+```
+
+From the table 
+
+Year of Publication: While looking at the year of publication, 3 studies were from 2008 and 3 studies from 2005, 2 from 2018, 1 each studies from 2010,2011,2012 and 2025.
+
+Design: Most of the study 42% design were Quasi-Experimental studies (n = 5), followed by 33% Cross-sectional comparative studies (n=4) and 25% Cross-sectional study (n=3). 
+
+Study Settings: Most of the study 42% were done in an institutional setting (n=5), followed by 3 studies done in relocation camps, 1 study done in urban slum, 1 study done in school based survey and 1 study in telephone survey.
+
+Reported Climatic Events: Among 12 studies, hurricane was the most reported climatic events (n=8), whereas Flood (n=1), Hurricane & Flood (n=1),Multiple (Coastal or Riverbank erosion,Cyclone, Flood) (n=1) and 	Typhoon, mudslides, flooding (n=1) were the reported cause of displacement of our study population of youth/chidren 5-24.
+
+# Conclusion
+Most of study 83.33% were from High Income Country, only few study 16.66% were from Lower middle income countries (LMICs), however studies representing Upper-middle income and study from Lower-income country were missing.This review finds the hat most of of the studies (n=7) reported Mental health and psychological health outcomes followed by Effect on Health Service Utilization (n=3), Complication of existing disease(1) and Water Borne and Vector borne disease (1) these outcome are very similar to outcome based WHO framework on Climate Change however few outcomes such as health related illness, respiratory illness were not reported in included studies. Moreover, the findings of this review also supported that the health outcomes in study participants were associated with Gender and equity, Socio-economic,Demographic, Socio-behavioral,Biological,Health System Capacity and Geographic Factor which was reported in the included studies.   
