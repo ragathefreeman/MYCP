@@ -10,7 +10,7 @@ date: "2026-09-07"
 output: html_document
 ---
 
-This R Markdown file contains the data analysis for the systematic review titled "Health Outcomes and Challenges among Youth and Children on the Move in the Context of Climate Change–Related Migration." The review protocol is publicly registered on the Open Science Framework (OSF): https://doi.org/10.17605/OSF.IO/PJKNC.
+This R Markdown file contains the data analysis for the scoping review titled "Health Outcomes and Challenges among Youth and Children on the Move in the Context of Climate Change–Related Migration." The review protocol is publicly registered on the Open Science Framework (OSF): https://doi.org/10.17605/OSF.IO/PJKNC.
 
 All data, analysis files, and supporting materials are also publicly available in our GitHub repository (https://github.com/ragathefreeman/MYCP) to promote open science, transparency, and reproducible research practices.
 
