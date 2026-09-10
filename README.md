@@ -25,7 +25,14 @@ To answer these questions, we will perform a scoping review of peer-reviewed lit
 # 12 articles were included in final synthesis
 ![Map](Images/map.jpg)
 # map of included articles 
-![Data extraction table](Images/Data extraction table.png)
+#[Piechart](Images/piechart.png)
+# Health outcomes reported in the included study
+#[Factors](Images/factors_influencing_outcomes.png)
+# Factors influening health outcomes of children and youth displace due to climatic event.
+![Data extraction table](Images/Data%20extraction%20table.png)
+# Data extraction table
+
+
 MYCP repo contains following main files: 
 
 "Protocol_MYPC.docx" is the main review protocol of this scoping review
