@@ -12,6 +12,20 @@ APA style "Khanal, R., Govind, S., Barrett, R., Eaty, M., & Bouaddi, O. (2026, M
 
 This review in title "Health Outcomes Among Children and Youth in Climate-Related Migration: A Scoping Review"
 
+
+The objective of this review is to assess the health impact and challenges faced as a result of climate change migration on this under-studied population. 
+Previous systematic and scoping reviews have noted the adverse health consequences arising from climate change associated displacement, but failed to focus on this vulnerable population.To fill this gap, with the intention of spurring research and policy adapted to the needs of this young population, we ask:
+
+●	According to existing literature, what are the health outcomes of climate change migration on children and youth? 
+●	Where is further research needed to inform meaningful policy to protect the health of young climate migrants?
+
+METHOD
+To answer these questions, we will perform a scoping review of peer-reviewed literature based on the framework of Arksey and O’Malley and in alignment with the PRISMA-ScR guidelines 
+
+
+
+MYCP repo contains following main files: 
+
 "Protocol_MYPC.docx" is the main review protocal of this scoping review
 
 "PRISMA and Search Results.docx" is the PRISMA-Flow and details of search results
