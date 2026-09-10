@@ -27,8 +27,7 @@ library(gtsummary)
 library(gt)
 
 # Import data (name of data is analysis.xlsx)
-d11 <- read_excel("analysis.xlsx")
-
+d11 <- read_excel("dataextraction/analysis.xlsx")
 # Convert variables to factors
 d11$`Country-Economy`<-as.factor(d11$`Country-Economy`)
 d11$Gender <- as.factor(d11$Gender)

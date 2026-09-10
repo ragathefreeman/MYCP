@@ -21,6 +21,10 @@ Previous systematic and scoping reviews have noted the adverse health consequenc
 
 METHOD
 To answer these questions, we will perform a scoping review of peer-reviewed literature based on the framework of Arksey and O’Malley and in alignment with the PRISMA-ScR guidelines 
+
+Brief of Results:
+This review to map the exisiting evidence in Health Outcomes Among Children and Youth of in Climate-Related Migration, Out of total 13650 search results from 4 major biomedical databases and 1 result from manual search, we included 12 article after duplication resolving, title and abstract screening, full-text screening processes based on inclusion and exclusion criteria. 
+
 ![PRISMA](Images/PRISMA.png)
 # 12 articles were included in final synthesis
 ![Map](Images/map.jpg)
@@ -32,22 +36,24 @@ To answer these questions, we will perform a scoping review of peer-reviewed lit
 ![Data extraction table](Images/Data%20extraction%20table.png)
 # Data extraction table
 
+MYCP repo contains following main files:
+1."All RIS File" folder include all the RIS file based on 4 databases
 
-MYCP repo contains following main files: 
+2."dataextraction" folder consists:
+-"analysis.xlsx" is the dataset analysis in R
+-"Included Article.xlsx" is the full description of included articles
 
-"Protocol_MYPC.docx" is the main review protocol of this scoping review
+3."Documents" folder consists:
+-"Protocol_MYPC.docx" is the main review protocol of this scoping review
+-"Results.docx" is the PRISMA-Flow and details of search results
+-"Search Strategy.docx" is the main search strategy of this review
+-"table1.docx" is the descriptive summary results of included article
 
-"PRISMA and Search Results.docx" is the PRISMA-Flow and details of search results
+4. "Images" folder consists: jpg and png image output from R visualization  
 
-"Excluded Article List and Included Article. Doc" is the details of article based on full-text screening
+5. Draft of paper.docx is the draft manuscript (still on progress)
 
-"All RIS File" folder include all the RIS file based on 4 databases
-
-"Included Articles.xlsx"is the data-extraction file from included article.
-
-"Preprint.docx"" is the preprint draft of article
-
-"MYCPMARKDOWN.html" is the Rmarkdown, where you can use "analysis.xlsx" file to replicate the study findings.
+6. "MYCPMARKDOWN.html" is the Rmarkdown, where you can use "~dataextraction/analysis.xlsx" file to replicate the study findings.
 
 - Thank you
 
