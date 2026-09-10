@@ -24,36 +24,53 @@ To answer these questions, we will perform a scoping review of peer-reviewed lit
 
 Brief of Results:
 This review to map the exisiting evidence in Health Outcomes Among Children and Youth of in Climate-Related Migration, Out of total 13650 search results from 4 major biomedical databases and 1 result from manual search, we included 12 article after duplication resolving, title and abstract screening, full-text screening processes based on inclusion and exclusion criteria. 
-
-![PRISMA](Images/PRISMA.png)
 # 12 articles were included in final synthesis
+![PRISMA](Images/PRISMA.png)
+
+# map of included articles (Taiwan,Bangladesh,Nigeria and USA)
 ![Map](Images/map.jpg)
-# map of included articles 
+
+# 3 major health outcomes reported in the included study
 #![Piechart](Images/Piechart.png)
-# Health outcomes reported in the included study
+
+# Factors associated with health outcomes in the included studies
 #![Factors](Images/factors_influencing_outcome.png)
-# Factors influening health outcomes of children and youth displace due to climatic event.
-![Data extraction table](Images/Data%20extraction%20table.png)
+
 # Data extraction table
+![Data extraction table](Images/Data%20extraction%20table.png)
 
-MYCP repo contains following main files:
-1."All RIS File" folder include all the RIS file based on 4 databases
 
-2."dataextraction" folder consists:
--"analysis.xlsx" is the dataset analysis in R
--"Included Article.xlsx" is the full description of included articles
 
-3."Documents" folder consists:
--"Protocol_MYPC.docx" is the main review protocol of this scoping review
--"Results.docx" is the PRISMA-Flow and details of search results
--"Search Strategy.docx" is the main search strategy of this review
--"table1.docx" is the descriptive summary results of included article
+## 📁 Repository Structure
 
-4. "Images" folder consists: jpg and png image output from R visualization  
+This repository contains the **search records, extracted data, analysis files, review documents, and visual outputs** supporting the scoping review. The materials are organised to facilitate transparency and reproducibility.
 
-5. Draft of paper.docx is the draft manuscript (still on progress)
+| Folder / File                | Description                                                                            |
+| ---------------------------- | -------------------------------------------------------------------------------------- |
+| 📂 **`All RIS File/`**       | RIS files retrieved from the **four bibliographic databases** searched for the review. |
+| 📂 **`dataextraction/`**     | Data used for study extraction, analysis, and reporting.                               |
+| ├── `analysis.xlsx`          | Dataset used as the input for the R-based analysis.                                    |
+| └── `Included Article.xlsx`  | Detailed characteristics and extracted information for the included studies.           |
+| 📂 **`Documents/`**          | Core review documents and supporting materials.                                        |
+| ├── `Protocol_MYCP.docx`     | Protocol for the scoping review.                                                       |
+| ├── `Search Strategy.docx`   | Complete search strategies used across the four databases.                             |
+| ├── `Results.docx`           | Search, screening, and PRISMA flow results.                                            |
+| └── `table1.docx`            | Descriptive summary of the included studies.                                           |
+| 📂 **`Images/`**             | Figures and visualisations generated during the analysis (`.png` and `.jpg`).          |
+| 📄 **`Draft of paper.docx`** | Current manuscript draft; the manuscript is under development.                         |
+| 📄 **`MYCPMARKDOWN.html`**   | HTML output of the R Markdown analysis, containing the analysis workflow and results.  |
 
-6. "MYCPMARKDOWN.html" is the Rmarkdown, where you can use "~dataextraction/analysis.xlsx" file to replicate the study findings.
+### 🔬 Reproducibility
+
+The analysis can be reproduced using the dataset provided in:
+
+`dataextraction/analysis.xlsx`
+
+The analysis workflow and generated results are available in:
+
+`MYCPMARKDOWN.html`
+
+Together, these materials provide the **data → analysis → visualisation → results** workflow used in this review.
 
 - Thank you
 
