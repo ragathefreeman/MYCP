@@ -85,14 +85,14 @@ scale_fill_gradientn(
     legend.position = "bottom"
   )
 
-ggsave("~/Desktop/SSH/MYCP/map.jpg")
+ggsave("~/Desktop/SSH/MYCP/Images/map.jpg")
 ```
 
 Among 12 included studies, 9 were from United States of America (USA), and 1 from Bangladesh, 1 Nigeria and 1 Taiwan.
 
 ```{r,echo=TRUE, warning=FALSE,message=FALSE}
 ggsave(
-  "~/Desktop/SSH/MYCP/country_map.png",
+  "~/Desktop/SSH/MYCP/Images/country_map.png",
   width = 10,
   height = 6,
   dpi = 500
@@ -192,7 +192,7 @@ ggplot(
   )
 
 ggsave(
-  "~/Desktop/SSH/MYCP/factors_influencing_outcome.png",
+  "~/Desktop/SSH/MYCP/Images/factors_influencing_outcome.png",
   width = 10,
   height = 6,
   dpi = 300
@@ -215,7 +215,7 @@ table1 <- d11 |>
   modify_caption("**Table 1**")
 gtsave(
   as_gt(table1),
-  filename = "~/Desktop/SSH/MYCP/table1.docx"
+  filename = "~/Desktop/SSH/MYCP/Documents/table1.docx"
 )
 table1
 ```
