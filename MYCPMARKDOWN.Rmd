@@ -59,22 +59,34 @@ world_joined <- world %>%
 
 ggplot(world_joined) +
   geom_sf(aes(fill = n), color = "blue", size = 0.1) +
-  scale_fill_gradient(
-    low = "pink",
-    high = "brown",
-    na.value = "white",
-    name = "Studies (n)"
-  ) +
-  theme_minimal() +
+scale_fill_gradientn(
+  colors = c("red", "#c51b8a", "#49006a"),
+  na.value = "grey95",
+  name = "Studies (n)",
+  breaks = c(1,5,9),
+  limits = c(1, max(country_counts$n, na.rm = TRUE)),
+  guide = guide_colorbar(
+    barwidth = 10, barheight = 0.5,
+    title.position = "top", title.hjust = 0.5
+  )
+) +
+  coord_sf(crs = "+proj=robin") +   # Robinson projection — less distorted than default
   labs(
-    title = "                          Countries from Included Studies"
+    title = "Global map of included studies",
+    caption = "Grey = no studies included"
   ) +
+  theme_minimal(base_size = 13) +
   theme(
+    plot.title = element_text(hjust = 0.5, face = "bold", size = 16),
+    plot.caption = element_text(hjust = 0.5, size = 9, color = "grey40"),
     axis.text = element_blank(),
+    axis.title = element_blank(),
     axis.ticks = element_blank(),
-    panel.grid = element_blank()
+    panel.grid = element_blank(),
+    legend.position = "bottom"
   )
 
+ggsave("~/Desktop/SSH/MYCP/map.jpg")
 ```
 
 Among 12 included studies, 9 were from United States of America (USA), and 1 from Bangladesh, 1 Nigeria and 1 Taiwan.
@@ -124,7 +136,7 @@ pie(
 ```
 
 
-Among total studies, majority of the studies (n=7) reported Mental health and pyschological health outcomes followed by Effect on Health Service Utilization (n=3), Complication of existing disease(1) and Water Borne and Vector borne disease(1).
+Among total studies, majority of the studies (n=7) reported Mental health and pyschological health outcomes followed by Effect on Health Service Utilization (n=4) and Water Borne and Vector borne disease(1).
 
 
 
@@ -171,9 +183,9 @@ ggplot(
   ) +
   coord_flip() +
   labs(
-    x = "Factor influencing health outcome",
+    x = "Factor mentioned in included studies",
     y = "Number of Studies",
-    title = "Studies reporting health outcome (n = 12)"
+    title = "Factor influencing health outcome in study population"
   ) +
   theme_minimal(base_size = 11) +
   theme(
