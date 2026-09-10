@@ -29,9 +29,9 @@ This review to map the exisiting evidence in Health Outcomes Among Children and 
 # 12 articles were included in final synthesis
 ![Map](Images/map.jpg)
 # map of included articles 
-#[Piechart](Images/piechart.png)
+#[Piechart](Images/Piechart.png)
 # Health outcomes reported in the included study
-#[Factors](Images/factors_influencing_outcomes.png)
+#[Factors](Images/factors_influencing_outcome.png)
 # Factors influening health outcomes of children and youth displace due to climatic event.
 ![Data extraction table](Images/Data%20extraction%20table.png)
 # Data extraction table
