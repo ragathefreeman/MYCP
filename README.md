@@ -31,10 +31,10 @@ This review to map the existing evidence in Health Outcomes Among Children and Y
 ![Map](Images/map.jpg)
 
 # 3 Major health outcomes reported in the included study
-#![Piechart](Images/Piechart.png)
+![Piechart](Images/Piechart.png)
 
 # Factors associated with health outcomes in the included studies
-#![Factors](Images/factors_influencing_outcome.png)
+![Factors](Images/factors_influencing_outcome.png)
 
 # Data extraction table
 ![Data extraction table](Images/Data%20extraction%20table.png)
