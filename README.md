@@ -21,12 +21,14 @@ Previous systematic and scoping reviews have noted the adverse health consequenc
 
 METHOD
 To answer these questions, we will perform a scoping review of peer-reviewed literature based on the framework of Arksey and O’Malley and in alignment with the PRISMA-ScR guidelines 
-
-![Map](map.jpg)
-
+![PRISMA](Images/PRISMA.png)
+# 12 articles were included in final synthesis
+![Map](Images/map.jpg)
+# map of included articles 
+![Data extraction table](Images/Data extraction table.png)
 MYCP repo contains following main files: 
 
-"Protocol_MYPC.docx" is the main review protocal of this scoping review
+"Protocol_MYPC.docx" is the main review protocol of this scoping review
 
 "PRISMA and Search Results.docx" is the PRISMA-Flow and details of search results
 
