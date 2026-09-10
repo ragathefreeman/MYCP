@@ -22,7 +22,7 @@ Previous systematic and scoping reviews have noted the adverse health consequenc
 METHOD
 To answer these questions, we will perform a scoping review of peer-reviewed literature based on the framework of Arksey and O’Malley and in alignment with the PRISMA-ScR guidelines 
 
-
+![Map](map.jpg)
 
 MYCP repo contains following main files: 
 
