@@ -20,6 +20,7 @@ Previous systematic and scoping reviews have noted the adverse health consequenc
 ●	Where is further research needed to inform meaningful policy to protect the health of young climate migrants?
 
 METHOD
+
 To answer these questions, we performed a scoping review of peer-reviewed literature based on the framework of Arksey and O’Malley and in alignment with the PRISMA-ScR guidelines 
 
 Results (Brief):
