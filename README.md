@@ -20,9 +20,9 @@ Previous systematic and scoping reviews have noted the adverse health consequenc
 ●	Where is further research needed to inform meaningful policy to protect the health of young climate migrants?
 
 METHOD
-To answer these questions, we will perform a scoping review of peer-reviewed literature based on the framework of Arksey and O’Malley and in alignment with the PRISMA-ScR guidelines 
+To answer these questions, we performed a scoping review of peer-reviewed literature based on the framework of Arksey and O’Malley and in alignment with the PRISMA-ScR guidelines 
 
-Brief of Results:
+Results (Brief):
 This review to map the existing evidence in Health Outcomes Among Children and Youth of in Climate-Related Migration, Out of total 13650 search results from 4 major biomedical databases and 1 result from manual search, we included 12 article after duplication resolving, title and abstract screening, full-text screening processes based on inclusion and exclusion criteria. 
 # 12 Articles were included in final synthesis
 ![PRISMA](Images/PRISMA.png)
