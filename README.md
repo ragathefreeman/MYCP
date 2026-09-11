@@ -73,7 +73,5 @@ The analysis workflow and generated results are available in:
 
 Together, these materials provide the **data → analysis → visualisation → results** workflow used in this review.
 
-- Thank you, we would like to thank Library of University of Dublin (UCD) for giving us the access to biomedical database and also help in development of search terms of this review.
 
-## Note this review is still ongoing and with some improvisation the review will be carried as Asia Pacifica Regional Network in Early Childhood Development Youth Champions Fellowship 2026 under led of Govind, S team. 
 
